@@ -1,0 +1,75 @@
+body {
+  background-color: black; }
+
+main .Boca {
+  background-color: yellow;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "imagen p"; }
+  main .Boca img {
+    grid-area: imagen;
+    width: 100%;
+    height: 750px;
+    margin-left: 0;
+    border: 3px solid blue; }
+  main .Boca aside {
+    text-align: left; }
+    main .Boca aside p {
+      grid-area: p;
+      font-size: 20px;
+      color: blue;
+      font-family: verdana; }
+
+main .River {
+  background-color: white;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "imagenB pB"; }
+  main .River .ImagenB {
+    grid-area: imagenB;
+    width: 100%;
+    height: 650px;
+    border: 3px solid red; }
+  main .River aside {
+    text-align: left; }
+    main .River aside .pB {
+      grid-area: pB;
+      font-size: 20px;
+      color: red;
+      font-family: verdana; }
+
+main .Racing {
+  background-color: aqua;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  grid-template-areas: "imagen-racing p-racing"; }
+  main .Racing .Imagen-racing {
+    grid-area: imagen-racing;
+    width: 100%;
+    height: 650px;
+    border: 3px solid #fff; }
+  main .Racing aside {
+    text-align: left; }
+    main .Racing aside .p-racing {
+      grid-area: p-racing;
+      font-size: 20px;
+      color: white;
+      font-family: verdana; }
+
+footer {
+  font-size: 20px;
+  background-color: black; }
+  footer div {
+    display: inline; }
+    footer div p {
+      display: inline;
+      color: white; }
+    footer div a {
+      display: inline;
+      color: white;
+      text-decoration: none; }
+      footer div a:hover {
+        color: aquamarine; }

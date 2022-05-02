@@ -1,0 +1,23 @@
+$fontsize: 20px;
+$color: white;
+$textdecoration: none;
+
+footer{
+    font-size: $fontsize;
+    background-color: black;
+    div{
+        display: inline;
+        p{
+            display: inline;
+            color: $color;
+        }
+        a{
+            display: inline;
+            color: $color;
+            text-decoration: $textdecoration;
+            &:hover{
+                color: aquamarine;
+            }
+    }
+}
+}

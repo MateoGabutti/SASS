@@ -1,0 +1,78 @@
+$color: yellow;
+$fontsize: 20px;
+$fontfamily: verdana;
+body{
+    background-color: black;
+}
+main{
+    .Boca{
+        background-color: $color;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "imagen p";
+        img{
+            grid-area: imagen;
+            width: 100%;
+            height: 750px;
+            margin-left: 0;
+            border: 3px solid blue;
+        }
+        aside{
+            text-align: left;
+            
+            p{
+                grid-area: p;
+                font-size: $fontsize;
+                color: blue;
+                font-family: $fontfamily;
+            }
+    }
+    }
+    .River{
+        background-color: white;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "imagenB pB";
+        .ImagenB{
+            grid-area: imagenB;
+            width: 100%;
+            height: 650px;
+            border: 3px solid red;
+        }
+        aside{
+            text-align: left;
+            
+            .pB{
+                grid-area: pB;
+                font-size: $fontsize;
+                color: red;
+                font-family: $fontfamily;
+            }
+    }
+    }
+    .Racing{
+        background-color: aqua;
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-areas: "imagen-racing p-racing";
+        .Imagen-racing{
+            grid-area: imagen-racing;
+            width: 100%;
+            height: 650px;
+            border: 3px solid #fff;
+        }
+        aside{
+            text-align: left;
+            
+            .p-racing{
+                grid-area: p-racing;
+                font-size: $fontsize;
+                color: white;
+                font-family: $fontfamily;
+            }
+    }
+    }
+}
